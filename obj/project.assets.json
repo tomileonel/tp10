@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Dapper/2.1.4": {
+      "Dapper/2.1.11": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {
@@ -163,15 +163,15 @@
     }
   },
   "libraries": {
-    "Dapper/2.1.4": {
-      "sha512": "TnTa28ktP/drRXnnXChHANq2WoF8af9DLu3VBtyPn3RYjxwDzuYhGrSvAN2CrmE+RyNaN1v81kf6rYbp0a4UaQ==",
+    "Dapper/2.1.11": {
+      "sha512": "4S2ysi5sxGID6TiAkNpAu4eqkGU1gZjOJ+UAygIdkWFEAX02S8NwUuUzqkqbHL9FTRgimwbz99xte2luMCm6iw==",
       "type": "package",
-      "path": "dapper/2.1.4",
+      "path": "dapper/2.1.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.1.4.nupkg.sha512",
+        "dapper.2.1.11.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -498,29 +498,24 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Dapper >= 2.1.4",
+      "Dapper >= 2.1.11",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47349708\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Migue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47349708\\Downloads\\tp10\\tp10.csproj",
+      "projectUniqueName": "C:\\Users\\Migue\\Desktop\\TomiProg\\tp10\\tp10.csproj",
       "projectName": "tp10",
-      "projectPath": "C:\\Users\\47349708\\Downloads\\tp10\\tp10.csproj",
-      "packagesPath": "C:\\Users\\47349708\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47349708\\Downloads\\tp10\\obj\\",
+      "projectPath": "C:\\Users\\Migue\\Desktop\\TomiProg\\tp10\\tp10.csproj",
+      "packagesPath": "C:\\Users\\Migue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Migue\\Desktop\\TomiProg\\tp10\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\47349708\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Migue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -528,6 +523,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -548,7 +544,7 @@
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[2.1.4, )"
+            "version": "[2.1.11, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
@@ -574,7 +570,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,6 +19,18 @@ public class HomeController : Controller
         return View();
     }
 
+    public string ObtenerTemporadasSerieAjax(int IdSerie){
+        List<Temporadas> listaTemporadas = new List<Temporadas>(IdSerie);
+        string TemporadasStr ="";
+        foreach (Temporadas temp in listaTemporadas)
+        {
+            TemporadasStr += temp.NumeroTemporada + ": " + temp.TituloTemporada+ " ";
+        }
+        return TemporadasStr;
+    }
+
+    
+
     public IActionResult Privacy()
     {
         return View();
