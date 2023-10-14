@@ -6,7 +6,7 @@ namespace TP10.Models;
 
 public static class BD
 {
-    private static string ConnectionString = @"Server=localhost; DataBase=BDSeries; Trusted_Connection=True";
+    private static string ConnectionString = @"Server=DELL-MIGUE\SQLEXPRESS; DataBase=BDSeries; Trusted_Connection=True";
 
     public static List<Series> ObtenerSeries()
     {
@@ -41,16 +41,18 @@ public static class BD
         return listaActores;
     }
 
-            public static List<Temporadas> ObtenerTemporadasSerie(int idSerie)
+public static List<Temporadas> ObtenerTemporadasSerie(int idSerie)
+{
+    List<Temporadas> listaTemporadas = new List<Temporadas>();
+    string sql = "SELECT * FROM Temporadas WHERE IdSeries = @iidSerie";
+
+    using (SqlConnection db = new SqlConnection(ConnectionString))
     {
-        List<Temporadas> listaTemporadas = new List<Temporadas>();
-        string sql = "SELECT * FROM Temporadas WHERE IdSeries = @iidSerie";
-        using(SqlConnection db = new SqlConnection(ConnectionString))
-        {
-            listaTemporadas = db.Query<Temporadas>(sql, new {iidSerie = idSerie}).ToList();
-        }
-        return listaTemporadas;
+        listaTemporadas = db.Query<Temporadas>(sql, new { iidSerie = idSerie }).ToList();
     }
+    return listaTemporadas;
+}
+
 
 
 }

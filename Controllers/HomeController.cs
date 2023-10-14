@@ -20,12 +20,13 @@ public class HomeController : Controller
     }
 
     public string ObtenerTemporadasSerieAjax(int IdSerie){
-        List<Temporadas> listaTemporadas = new List<Temporadas>(IdSerie);
+        List<Temporadas> listaTemporadas = BD.ObtenerTemporadasSerie(IdSerie);
         string TemporadasStr ="";
         foreach (Temporadas temp in listaTemporadas)
         {
-            TemporadasStr += temp.NumeroTemporada + ": " + temp.TituloTemporada+ " ";
-        }
+            TemporadasStr =TemporadasStr+ temp.NumeroTemporada + ": " + temp.TituloTemporada+ " ";
+
+        }   
         return TemporadasStr;
     }
 
